@@ -3,40 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Personal Portfolio Website.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <style>
-        body {
-            font-family: "Audiowide", sans-serif;
-        }
-    </style>
+
+
 </head>
-<body style="background-color: aquamarine;">
-    <header>
-        <div>
-            <!--Navigatin links-->
-            <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#about me">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+<body>
+  <!--Header section of the page-->
+    <header class="header">
+        <h1>My Personal Portfolio Profile</h1>
+            <!-- For website navigation -->
+          <section class="top-navigation">
+            <div class="website-navigation" id="myTopnav">
+              <a href="#home">Home</a>
+              <a href="#about me">About me</a>
+              <a href="#skills">Skills</a>
+              <a href="#contact">Contact me</a>
             </div>
-            <!--End of navigation links-->
-
-            <!-- Profile photo-->
-            <div>
-            <a href="#">
-                <span>Picture</span>
-            </a>
-            </div>
-            <!--End of profile photo-->
-        </div>
+          </section> 
     </header>
+    
+  <!--Main section of the body of the page-->
+    <div class="main">
+      <div class="row" id="Profile">
+        <div class="column">
+          <div class="card">
+            <img src="images/profile picture.jpg" alt="" style="width:100%">
+              <div class="container">
+                <h2>Mamaila Mothiba</h2>
+                <p class="title">Director & Founder of Mothiba Farming and projects</p>
+                <p>Location: Polokwane, South Africa</p>
+              </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="/Personal Portfolio Website.js"></script>
+      <div class="about_me" id="about_me_id">
+      <h2>About Me</h2>
+      <p> I am a proud young female livestock farmer specializing in Bonsmara and Nguni cattle in the Immerpan area of Limpopo Province, South Africa. I also provide mentorship to farmers with the aim to minimize the stigma that farming is for the male, illeterate and elderly people. As part of my career and personal growth I am now shifting my interests towards software engineering.</p>
+      <p>I am a studying introduction to software engineering through ALX Africa</p>
+      <div class="about_me" id="education_id">
+        <h3>Education</h3>
+          <table class="table-style">
+            <thead>
+              <tr>
+                <th>Institution</th>
+                <th>Qualification</th>
+                <th>Year completed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ALX Africa</td>
+                <td>Introduction to Software Engineering</td>
+                <td>June 2023 - date</td>
+              </tr>
+              <tr>
+                <td>North-West University</td>
+                <td>Master of Science in Agricultural Economics</td>
+                <td>2016-2018</td>
+              </tr>
+              <tr>
+                <td>University of Limpopo</td>
+                <td>Bachelor of Science in Agriculture</td>
+                <td>2010-2013</td>
+              </tr>
+              <tr>
+                <td>Matswake High School</td>
+                <td>Matric</td>
+                <td>2009</td>
+              </tr>
+            </tbody> 
+          </table>
+      </div>  
+      </div>
+    </div>
+
+    <!--Skills section-->
+    <section id="Skills-section">
+      <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">html</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">css</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">python</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="65%" style="max-width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">javascript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    
+    <!--Projects section-->
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/images/Screenshot html,css.png" alt="" style="width:100%">
+            <div class="container">
+              <h2>HTML, CSS projects</h2>
+              <p>The aim of the project was to learn to create a webpage using HTML and CSS. This was achieved through the proper use of elements, tags, attributes and styles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="/images/Screenshot python.png" alt="" style="width:100%">
+            <div class="container">
+              <h2>Python projects</h2>
+              <p>The purpose of this project was to learn python programming using data structures, classes and objects, inheritance and importing functions from another file.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="/images/Screenshot js.png" alt="" style="width:100%">
+            <div class="container">
+              <h2>Javascript projects</h2>
+              <p>The purpose of this project was to learn JavaScript programming language. The scope included writing JavaScript codes using data types, objects, scopes, closures, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--contact us section-->
+      <section id="contact-section">
+        <div class="container">
+          <h1>Contact me</h1>
+          <form id="Contact" action="" method="post">
+            <div>
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email address">Email</label><br>
+              <input type="email" id="email" email="email" required>
+            </div>
+            <div><label for="message">Message</label><br>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <br>
+            <button onclick="sendContact();">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+<!--footer section-->
+<footer>
+    <!--social media icons-->
+    <div class="row social">
+      <div class="social-icons">
+        <a href="https:facebook.com/sebotsanadebeat" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/MamailaMC" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/mamaila-mothiba-917a7369" class="fa fa-linkedin"></a>
+        <a href="https://github.com/mmothiba4" class="fa fa-github"></a>
+      </div>
+    </div>
+    
+</footer>
+
+  <noscript>Your browser don't support JavaScript!</noscript>
+  <script src="./Personal Portfolio Website.js"></script>
 </body>
 </html>
+
+
+   

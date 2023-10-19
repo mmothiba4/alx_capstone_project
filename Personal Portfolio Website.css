@@ -1,45 +1,315 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: teal; 
+  }
+/* navigation */
 
-header {
-    border: 0cm solid black;
-    height: fit-content;
-    padding: auto;
-
-}
-
-header div {
-    border: 0cap solid black;
-    display: flex;
-    padding: 0%;
-    justify-content: space-between;
-}
-
-header div div {
-     
-}
-/* Add a black bacground colour to the top navigation */
-.topnav {
-    background-color: black;
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: aliceblue;
-    text-align: center;
-    padding: 0%;
+a:hover {
+    color: skyblue;
     text-decoration: none;
+  }
+  
+  p a{
+    color: skyblue;
+    text-decoration: none
+  }
+  .top-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px 3px;
+    background-color: #1da78e;
+    overflow: auto;
+    padding: 10px;
+  }
+  
+  .top-navigation a{
+      float: right;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  
+  section div {
+    height: auto;
+    width: auto;
+  }
+/* Main section of the body */
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 8px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0;
     font-size: small;
+  }
+
+.card .img {
+    width: 100px;
+    height: 214px;
+    border-radius: 12px;
+    display: block;
 }
 
-/* Change a color of links on hover */
-.topnav a:hover {
-    background-color: antiquewhite;
-    color: black;
+.card .p { 
+  font-size: small;
+  line-height: 150%;
+
 }
 
-/* Add color to the active/current link */
-.topnav a.active {
-    background-color: aliceblue;
-    color: black;
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Table: education */
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+table, th, td {
+  border: 1px solid;
+  width: fit-content;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+thead {
+  background-color: darkgray;
+  color: white;
+}
+
+/*Skills section */
+
+.skills{
+  width: 100px;
+  max-width: 600px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.skill-name {
+  font-size: 14px ;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase ;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 10px;
+  background-color: black;
+  border-radius: 3px ;
+  
+}
+
+.skill-per {
+  height: 10px;
+  border-radius: 3px ;
+  background-color: green;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 2px 4px;
+  background: black;
+  border-radius: 2px ;
+  font-size: 10px;
+  top: -20px ;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -20px ;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+  
+
+}
+
+@keyframes fillBars {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+/* Projects
+
+=============================*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 6px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #04AA6D;
+  text-align: right;
+}
+
+.social {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social a {
+  font-size: 15px;
+  color: black;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 6px;
+}
+
+.social a:hover {
+  background-color: blue;
+  color: white;
+}
+
+/*set colors*/
+.fa-facebook {
+  background: #3b5998;
+  color: black;
+}
+
+.fa-twitter{
+  background: #55acee;
+  color: black;
+}
+
+.fa-linkedin {
+  background: #3b5998;
+  color: black;
+}
+
+.fa-github {
+  background: #55acee;
+  color: black;
+}
+
+h1 {
+  text-align: left;
+}
+
+/* Contact form */
+h1 {
+  text-align: left;
+}
+
+.container {
+  padding: 12px;
+  margin: 24px;
+  border-radius: 2px;
+}
+
+label {
+  width: 100px;
+  padding: 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input {
+  border: 1px solid green;
+  margin: 4px;
+}
+
+input[type=submit] {
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  border: 0;
+  padding: 12px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+input[type=submit]:focus {
+  color: whitesmoke;
+}
+
+input[type=submit]:hover{
+  background: #2196f3;
+}
+
+textarea {
+  border: 1px solid green;
+  margin: 4px;
+  padding-top: 4px;
 }
