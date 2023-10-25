@@ -5,10 +5,6 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
-# Configuration for sending emails
-app.config['MAIL_SERVER'] = os.getenv("MAIL_SERVER")
-app.config['MAIL_USERNAME'] = os.getenv("MAIL_USERNAME")
-
 
 mail = Mail(app)
 
