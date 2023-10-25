@@ -1,14 +1,14 @@
 from flask import Flask, request, jsonify
 from flask_mail import Mail, Message
 
-# Load environment variables from .env file
+# Load environment variables from
 
 app = Flask(__name__)
 
-# Configuration for sending emails (replace with your SMTP settings)
+# Configuration for sending emails
 app.config['MAIL_SERVER'] = os.getenv("MAIL_SERVER")
 app.config['MAIL_USERNAME'] = os.getenv("MAIL_USERNAME")
-app.config['MAIL_PASSWORD'] = os.getenv("MAIL_PASSWORD")
+
 
 mail = Mail(app)
 
